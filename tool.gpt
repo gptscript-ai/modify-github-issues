@@ -1,0 +1,8 @@
+description: Uses the GitHub API to comment on or close issues.
+
+args: command: (required) Must be either "comment" or "close".
+args: repo: (required) The repository to comment on or close an issue in. Must be in the format "owner/repo".
+args: number: (required) The issue number to comment on or close.
+args: comment: (required if command is "comment") The comment to post on the issue.
+
+#!${GPTSCRIPT_TOOL_DIR}/bin/gptscript-go-tool "${GPTSCRIPT_INPUT}"
